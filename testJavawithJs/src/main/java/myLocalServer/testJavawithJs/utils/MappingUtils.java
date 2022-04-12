@@ -30,7 +30,7 @@ public class MappingUtils {
         card.setId(dtoCard.getId());
         card.setBonusName(dtoCard.getBonusName());
         card.setDatetimeCreate(dtoCard.getDatetimeCreate());
-        card.setId(dtoCard.getId());
+        card.setDescription(dtoCard.getDescription());
         return card;
     }
 }

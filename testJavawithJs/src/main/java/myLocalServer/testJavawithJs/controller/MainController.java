@@ -49,7 +49,8 @@ public class MainController {
 
     @PutMapping("/update")
     public ResponseEntity<DtoCard> updateCard(@RequestBody DtoCard card)  {
-        DtoCard cardFromDb = null;
+        System.out.println(card);
+        DtoCard cardFromDb = new DtoCard();
         try {
             cardFromDb = iCardService.findById(card.getId());
         } catch (NotFoundException e) {

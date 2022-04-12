@@ -13,6 +13,7 @@ public class Card {
     private Long id;
     @Column(name = "bonus_name")
     private String bonusName;
+    @Column(name = "description")
     private String description;
     @Column(name = "datetime_create")
     @CreationTimestamp
